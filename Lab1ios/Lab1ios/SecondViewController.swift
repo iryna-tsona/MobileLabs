@@ -2,7 +2,7 @@
 //  SecondViewController.swift
 //  Lab1ios
 //
-//  Created by Богдан Дацьків on 3/19/19.
+//  Created by Ірина Цьона on 3/19/19.
 //  Copyright © 2019 Ірина Цьона. All rights reserved.
 //
 
