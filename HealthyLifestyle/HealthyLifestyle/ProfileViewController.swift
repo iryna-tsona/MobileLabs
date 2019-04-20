@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController {
 
@@ -15,6 +16,16 @@ class ProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func logoutTapped(_ sender: UIButton) {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print("sign out error: \(error.localizedDescription)")
+        }
+    }
+    
+   
     
     /*
     // MARK: - Navigation
