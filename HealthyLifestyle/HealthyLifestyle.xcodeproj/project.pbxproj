@@ -64,7 +64,6 @@
 				3E503CB0C4FFCBB74F1420FC /* Pods-HealthyLifestyle.debug.xcconfig */,
 				5F84D5E21E581B99A21F5785 /* Pods-HealthyLifestyle.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -101,8 +100,8 @@
 				C0BF6F15225BF0E9006E9A5D /* Main.storyboard */,
 				C0BF6F0A225BF0B0006E9A5D /* LoginViewController.swift */,
 				C0BF6F0B225BF0B0006E9A5D /* MealsTableViewCell.swift */,
-				C0BF6F05225BF0AF006E9A5D /* MealsTableViewController.swift */,
 				C0BF6F07225BF0AF006E9A5D /* MenuTableViewController.swift */,
+				C0BF6F05225BF0AF006E9A5D /* MealsTableViewController.swift */,
 				C0BF6F09225BF0AF006E9A5D /* ProfileViewController.swift */,
 				C0BF6F08225BF0AF006E9A5D /* RegistrationViewController.swift */,
 				C0BF6F06225BF0AF006E9A5D /* TasksTableViewController.swift */,

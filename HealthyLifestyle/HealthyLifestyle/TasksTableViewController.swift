@@ -68,12 +68,17 @@ class TasksTableViewController: UITableViewController {
                 }
             }
         }
+
+        do {
+            complete[0].lastSeen = Date()
+            
+            try context.save()
+            
+        } catch {
+            print(error.localizedDescription)
+        }
     }
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -119,7 +124,6 @@ class TasksTableViewController: UITableViewController {
         
         do {
             complete[indexPath.row].isComplete = !complete[indexPath.row].isComplete
-            complete[0].lastSeen = Date()
             
             try context.save()
             
