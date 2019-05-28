@@ -11,6 +11,7 @@ import UIKit
 class TaskTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labl: UILabel!
+    @IBOutlet weak var imageTask: UIImageView!
     
     //var isChecked = false
     

@@ -10,6 +10,12 @@ import UIKit
 
 class MealsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var caloriesLabel: UILabel!
+    @IBOutlet weak var carbohydratesLabel: UILabel!
+    @IBOutlet weak var fatsLabel: UILabel!
+    @IBOutlet weak var proteinsLabel: UILabel!
+    @IBOutlet weak var mealsImage: UIImageView!
+    @IBOutlet weak var mealsTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

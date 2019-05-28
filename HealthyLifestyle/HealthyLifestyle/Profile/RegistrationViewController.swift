@@ -11,8 +11,9 @@ import Firebase
 
 class RegistrationViewController: UIViewController {
 
-    @IBOutlet weak var emailTextField: UITextField!
+    var ref: DatabaseReference!
     
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     
@@ -26,8 +27,7 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        ref = Database.database().reference(withPath: "users")
     }
     //function for displaying alert
     func displayAlert(withText text: String, completion: ((UIAlertAction) -> ())?) {
@@ -46,14 +46,21 @@ class RegistrationViewController: UIViewController {
             return
         }
         //creating new user
-        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-            guard error == nil else {
-                self.displayAlert(withText: "Creating user error: \(error!.localizedDescription)", completion: nil)
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] (authResult, error) in
+            guard error == nil, let user = authResult?.user else {
+                self?.displayAlert(withText: "Creating user error: \(error!.localizedDescription)", completion: nil)
                 return
+            }
+            let userRef = self?.ref.child(user.uid).child("userData")
+            userRef?.setValue(["e-mail": user.email])
+            let userTasksRef = self?.ref.child(user.uid).child("tasks")
+            for order in 0...4 {
+                let taskRef = userTasksRef?.child("task\(order)")
+                taskRef?.setValue(["completed": false])
             }
             Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
                 guard error == nil else {
-                    self.displayAlert(withText: "Sending verification email error: \(error!.localizedDescription)", completion: nil)
+                    self?.displayAlert(withText: "Sending verification email error: \(error!.localizedDescription)", completion: nil)
                     return
                 }
             })
@@ -62,8 +69,8 @@ class RegistrationViewController: UIViewController {
             } catch {
                 print("sign out error: \(error.localizedDescription)")
             }
-            self.displayAlert(withText: "Verify your email and sign in", completion: { (alertAction) in
-                self.performSegue(withIdentifier: "login", sender: nil)
+            self?.displayAlert(withText: "Verify your email and sign in", completion: { (alertAction) in
+                self?.performSegue(withIdentifier: "login", sender: nil)
             })
         }
     }
@@ -72,15 +79,4 @@ class RegistrationViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

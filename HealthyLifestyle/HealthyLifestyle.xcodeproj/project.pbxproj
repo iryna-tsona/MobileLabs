@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0677865229967A200C4C4D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0677864229967A200C4C4D5 /* User.swift */; };
+		C0677867229967EB00C4C4D5 /* FireTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0677866229967EB00C4C4D5 /* FireTasks.swift */; };
 		C0BF6EF1225BF067006E9A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BF6EF0225BF067006E9A5D /* AppDelegate.swift */; };
 		C0BF6EF9225BF067006E9A5D /* HealthyLifestyle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0BF6EF7225BF067006E9A5D /* HealthyLifestyle.xcdatamodeld */; };
 		C0BF6EFB225BF069006E9A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BF6EFA225BF069006E9A5D /* Assets.xcassets */; };
@@ -28,20 +30,22 @@
 		3E503CB0C4FFCBB74F1420FC /* Pods-HealthyLifestyle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLifestyle.debug.xcconfig"; path = "Target Support Files/Pods-HealthyLifestyle/Pods-HealthyLifestyle.debug.xcconfig"; sourceTree = "<group>"; };
 		5F84D5E21E581B99A21F5785 /* Pods-HealthyLifestyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLifestyle.release.xcconfig"; path = "Target Support Files/Pods-HealthyLifestyle/Pods-HealthyLifestyle.release.xcconfig"; sourceTree = "<group>"; };
 		B5AFC72FBE1CFD2E3EC1F651 /* Pods_HealthyLifestyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLifestyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0677864229967A200C4C4D5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C0677866229967EB00C4C4D5 /* FireTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireTasks.swift; sourceTree = "<group>"; };
 		C0BF6EED225BF067006E9A5D /* HealthyLifestyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLifestyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BF6EF0225BF067006E9A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BF6EF8225BF067006E9A5D /* HealthyLifestyle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthyLifestyle.xcdatamodel; sourceTree = "<group>"; };
 		C0BF6EFA225BF069006E9A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0BF6EFD225BF069006E9A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0BF6EFF225BF069006E9A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0BF6F05225BF0AF006E9A5D /* MealsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
-		C0BF6F06225BF0AF006E9A5D /* TasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
+		C0BF6F05225BF0AF006E9A5D /* MealsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealsTableViewController.swift; path = ../MealsTableViewController.swift; sourceTree = "<group>"; };
+		C0BF6F06225BF0AF006E9A5D /* TasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TasksTableViewController.swift; path = ../TasksTableViewController.swift; sourceTree = "<group>"; };
 		C0BF6F07225BF0AF006E9A5D /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		C0BF6F08225BF0AF006E9A5D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		C0BF6F09225BF0AF006E9A5D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C0BF6F0A225BF0B0006E9A5D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		C0BF6F0B225BF0B0006E9A5D /* MealsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsTableViewCell.swift; sourceTree = "<group>"; };
-		C0BF6F0C225BF0B0006E9A5D /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		C0BF6F0B225BF0B0006E9A5D /* MealsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealsTableViewCell.swift; path = ../MealsTableViewCell.swift; sourceTree = "<group>"; };
+		C0BF6F0C225BF0B0006E9A5D /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskTableViewCell.swift; path = ../TaskTableViewCell.swift; sourceTree = "<group>"; };
 		C0BF6F16225BF0E9006E9A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0EC6ACF226B14AE00E6DF4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +79,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C0677861229956FE00C4C4D5 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				C0BF6F06225BF0AF006E9A5D /* TasksTableViewController.swift */,
+				C0BF6F0C225BF0B0006E9A5D /* TaskTableViewCell.swift */,
+				C0677866229967EB00C4C4D5 /* FireTasks.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		C06778622299572D00C4C4D5 /* Meals */ = {
+			isa = PBXGroup;
+			children = (
+				C0BF6F0B225BF0B0006E9A5D /* MealsTableViewCell.swift */,
+				C0BF6F05225BF0AF006E9A5D /* MealsTableViewController.swift */,
+			);
+			path = Meals;
+			sourceTree = "<group>";
+		};
+		C0677863229957AC00C4C4D5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C0BF6F0A225BF0B0006E9A5D /* LoginViewController.swift */,
+				C0BF6F09225BF0AF006E9A5D /* ProfileViewController.swift */,
+				C0BF6F08225BF0AF006E9A5D /* RegistrationViewController.swift */,
+				C0677864229967A200C4C4D5 /* User.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		C0BF6EE4225BF066006E9A5D = {
 			isa = PBXGroup;
 			children = (
@@ -96,19 +130,15 @@
 		C0BF6EEF225BF067006E9A5D /* HealthyLifestyle */ = {
 			isa = PBXGroup;
 			children = (
-				C0EC6ACF226B14AE00E6DF4B /* GoogleService-Info.plist */,
 				C0BF6F15225BF0E9006E9A5D /* Main.storyboard */,
-				C0BF6F0A225BF0B0006E9A5D /* LoginViewController.swift */,
-				C0BF6F0B225BF0B0006E9A5D /* MealsTableViewCell.swift */,
 				C0BF6F07225BF0AF006E9A5D /* MenuTableViewController.swift */,
-				C0BF6F05225BF0AF006E9A5D /* MealsTableViewController.swift */,
-				C0BF6F09225BF0AF006E9A5D /* ProfileViewController.swift */,
-				C0BF6F08225BF0AF006E9A5D /* RegistrationViewController.swift */,
-				C0BF6F06225BF0AF006E9A5D /* TasksTableViewController.swift */,
-				C0BF6F0C225BF0B0006E9A5D /* TaskTableViewCell.swift */,
+				C0677863229957AC00C4C4D5 /* Profile */,
+				C06778622299572D00C4C4D5 /* Meals */,
+				C0677861229956FE00C4C4D5 /* Tasks */,
 				C0BF6EF0225BF067006E9A5D /* AppDelegate.swift */,
 				C0BF6EFA225BF069006E9A5D /* Assets.xcassets */,
 				C0BF6EFC225BF069006E9A5D /* LaunchScreen.storyboard */,
+				C0EC6ACF226B14AE00E6DF4B /* GoogleService-Info.plist */,
 				C0BF6EFF225BF069006E9A5D /* Info.plist */,
 				C0BF6EF7225BF067006E9A5D /* HealthyLifestyle.xcdatamodeld */,
 			);
@@ -246,12 +276,14 @@
 				C0BF6EF9225BF067006E9A5D /* HealthyLifestyle.xcdatamodeld in Sources */,
 				C0BF6F14225BF0B0006E9A5D /* TaskTableViewCell.swift in Sources */,
 				C0BF6EF1225BF067006E9A5D /* AppDelegate.swift in Sources */,
+				C0677867229967EB00C4C4D5 /* FireTasks.swift in Sources */,
 				C0BF6F0F225BF0B0006E9A5D /* MenuTableViewController.swift in Sources */,
 				C0BF6F12225BF0B0006E9A5D /* LoginViewController.swift in Sources */,
 				C0BF6F13225BF0B0006E9A5D /* MealsTableViewCell.swift in Sources */,
 				C0BF6F11225BF0B0006E9A5D /* ProfileViewController.swift in Sources */,
 				C0BF6F0E225BF0B0006E9A5D /* TasksTableViewController.swift in Sources */,
 				C0BF6F0D225BF0B0006E9A5D /* MealsTableViewController.swift in Sources */,
+				C0677865229967A200C4C4D5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
